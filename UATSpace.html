@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!--
+    This is for w2 blastoff assignment
     Created by:
     Nickolaus Grant
     nicgrant@uat.edu
@@ -12,8 +13,10 @@
 <head>
     <!--This is head , it is where all the behind the background stuff that goes on-->
     <title>
-        Nickolaus Grant Space Program V.1
+        Nickolaus Grant Space Program V.1.1
     </title>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -28,16 +31,32 @@
     </p>
     <script>
         // This is how to use the alert the function and get me points
-        alert("This is a test of the alert function");
+        //alert("This is a test of the alert function");
         document.write("This is a test of the document.write function")
     </script>
     <br>
     <br>
+    <h2> Blastoff Timer</h2>
+    <div id ="blastoffdiv">Press Start to begin blastoff timer</div>
     <br>
-    <button>Start</button>
+    <br>
+    <button onclick="blastofftimer();">Start</button>
     <button>Stop</button>
-
-
+    <br>
+    <br>
+    <!-- Craps Game code for HTML and also show where it is in the webpage-->
+    <h2> Craps Game</h2> 
+    <!-- Be able to Id the die1Res for the code in code.js -->
+    <div id="die1Res"> Die 1 Results</div> <br>
+    <!-- Be able to Id the die2Res for the code in code.js -->
+    <div id="die2Res"> Die 2 Results</div> <br>
+    <!-- Be able to Id the diceSum for the code in code.js -->
+    <div id="diceSum">Sum of Die 1 and Die 2</div><br>
+    <!-- Be able to Id the gameRes for the code in code.js -->
+    <div id="gameRes">Game Results</div><br>
+    <!-- This provides a buttom to Play Craps and on click it starts the code in code.js to work-->
+    <button onclick="playCraps()">Play Craps</button>
+    <br>
 </body>
 
 </html>
